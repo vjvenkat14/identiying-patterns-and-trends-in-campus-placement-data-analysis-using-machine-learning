@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PREDICT</title>
+    <style>
+        body {
+                background-image: url('static/images/predict.jpg');
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size:100% 100%;
+             }
+        form {
+                display: flex;
+                flex-direction: column;
+                max-width: 500px;
+                margin: 0 auto;
+                color:#F8B88B;
+             }
+        select{
+            margin-bottom:30px;
+            height:30px;
+             font-size: 16px;
+             color: #333;
+              }
+
+              select:hover {
+                background-color: #eee;
+                border: 1px solid #aaa;
+              }
+
+              select:focus {
+                background-color: #fff;
+                border: 2px solid #007bff;
+                outline: none;
+              }
+
+        label {
+                font-weight: bold;
+                margin-bottom: 10px;
+               }
+
+        input, textarea {
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                }
+
+        button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 4px;
+                cursor: pointer;
+                }
+
+        button:hover {
+               background-color: #3e8e41;
+                }
+        h1{
+        text-align:center;
+        color:#00ffff;
+        }
+        input[type="text"] {
+                            background-color: #E5E4E2;
+                             }
+
+    </style>
+
+</head>
+<body>
+<h1>Campus placement prediction</h1>
+<form action="/getdata" method="post" autocomplete="off">
+    <label for='age'>AGE</label>
+    <input type="text" id="age" name="age" required><br>
+    <label for='gender'>GENDER</label>
+    <select id="gender" name="gender" required>
+        <option value="" disabled selected hidden></option>
+    <option value=1>Male</option>
+    <option value=0>Female</option>
+  </select>
+    <label for='stream'>STREAM</label>
+    <select id="stream" name="stream" required>
+        <option value="" disabled selected hidden></option>
+        <option value=0>Electronics and Communication</option>
+        <option value=1>Computer Science</option>
+        <option value=2>Information Technology</option>
+        <option value=3>Mechanical</option>
+        <option value=4>Electrical</option>
+        <option value=5>Civil</option>
+  </select><br>
+    <label for='internships'>INTERNSHIPS</label>
+    <input type="text" id="internships" name="internships" required><br>
+    <label for='cgpa'>CGPA</label>
+    <input type="text" id="cgpa" name="cgpa"required><br>
+    <label for='hostel'>HOSTEL</label>
+    <input type="text" id="hostel" name="hostel"required><br>
+    <label for='historyofbacklogs'>HISTORYOFBACKLOGS</label>
+    <input type="text" id="historyofbacklogs" name="historyofbacklogs"><br>
+    <button type="submit">SUBMIT</button>
+</form>
+</body>
+</html>

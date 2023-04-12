@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body{
+            background-image: url('static/images/home.jpg');
+        }
+
+             .wrapper {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      text-align:center;
+                      padding-top:20px;
+            }
+            .button-wrapper{
+                          display: flex;
+                          gap: 10px;
+            }
+          h1{
+                margin:auto;
+               display: inline-block; /* Set display to inline-block */
+              vertical-align: middle;
+              text-align:center;
+              color:#daa520;
+              font-size: 48px; /* Set font size to 32 pixels */
+              font-weight: bold; /* Set font weight to bold */
+              line-height: 1.2; /* Set line height to 1.2 */
+              margin-bottom: 20px; /* Set margin bottom to 20 pixels */
+
+                }
+
+        p {
+              font-size: 18px; /* Set font size to 16 pixels */
+              line-height: 1.5; /* Set line height to 1.5 */
+              text-align:center;
+              font-size:24px;
+              color:#afeeee;
+              text-size:28px;
+              font-family:monospace,san-serif;
+              margin: 10px 0; /* Set margin to 10 pixels top and bottom, 0 pixels left and right */
+              position: absolute; /* Set position to absolute */
+              top: 50%; /* Set top to 50% */
+              left: 30%; /* Set left to 50% */
+              transform: translate(-30%, -50%);
+        }
+
+        button {
+                  background-color: #BA836C; /* Set the background color */
+                  color: white; /* Set the text color */
+                  padding: 18px 32px; /* Set the padding */
+                  border: none; /* Remove the border */
+                  border-radius: 5px; /* Add rounded corners */
+                  cursor: pointer; /* Change cursor on hover */
+                  font-size:20px;
+                  text-align:right;
+                }
+
+        button:hover {
+                 background-color: #3e8e41; /* Change background color on hover */
+               }
+        .container {
+                position: relative; /* Set position to relative */
+                text-align:right;
+              }
+        .button {
+                position: absolute; /* Set position to absolute */
+                top: 0; /* Align to top of container */
+                right: 0; /* Align to right of container */
+              }
+ </style>
+</head>
+<body>
+<div class="wrapper">
+        <h1>About the Project</h1>
+    <div class="button-wrapper">
+       <a href="/home"><button>Home</button></a>
+        <a href="/predict"><button>Predict</button></a>
+    </div>
+</div>
+<p>This project reflects the Campus placement data analysis using machine learning, and It can predict the placement status based on Age,Gender,Stream,Internships and more... </p>
+<h2></h2>
+</body>
+</html>
